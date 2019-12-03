@@ -20,7 +20,7 @@ class Header extends Component {
         // We're saving it into state //
         this.setState({
             userChoice: e.target.value
-            // It wont run until setState has finished //
+            // It wont run until setState has finished ///
         });
     }
 

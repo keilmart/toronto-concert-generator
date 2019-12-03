@@ -11,6 +11,13 @@
     }
 }
 
+@media (max-width: 500px) {
+    .Results h2 {
+    font-size: 1.6rem;
+    letter-spacing: 3.2px;
+    }
+}
+
 .Results h3 {
     font-size: 1.6rem;
     letter-spacing: 3.2px;
@@ -24,6 +31,13 @@
     }
 }
 
+@media (max-width: 500px) {
+    .Results h3 {
+    font-size: 1.2rem;
+    letter-spacing: 3.2px;
+    }
+}
+
 .Results h4 {
     font-size: 1.1rem;
     letter-spacing: 3.2px;
@@ -33,6 +47,13 @@
 @media (max-width: 940px) {
     .Results h4 {
     font-size: 1.4rem;
+    letter-spacing: 3.2px;
+    }
+}
+
+@media (max-width: 940px) {
+    .Results h4 {
+    font-size: 1rem;
     letter-spacing: 3.2px;
     }
 }
