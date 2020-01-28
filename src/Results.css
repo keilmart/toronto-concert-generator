@@ -19,6 +19,7 @@
 }
 
 .Results h3 {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     letter-spacing: 3.2px;
     color: white;
@@ -39,6 +40,7 @@
 }
 
 .Results h4 {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     letter-spacing: 3.2px;
     color: white;

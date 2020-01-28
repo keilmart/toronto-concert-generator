@@ -21,8 +21,8 @@ class App extends Component {
     this.state = {
       // this is where we're saving the data
       allMusicVenues: [],
-      filteredArray:[],
-      finalArray:[],
+      filteredArray: [],
+      finalArray: [],
     }
   }
 
@@ -57,31 +57,31 @@ class App extends Component {
 
     const originalArray = [...this.state.allMusicVenues];
 
-    let subArray = originalArray.filter(event =>{
+    let subArray = originalArray.filter(event => {
       return event.classifications[0].genre.id === choiceOfGenre;
     })
 
-    const filteredArray =[];
+    const filteredArray = [];
     for (let i = 0; i < 6; i++) {
       filteredArray.push(subArray[i]);
     }
 
-this.setState({
-  finalArray : filteredArray
-})
+    this.setState({
+      finalArray: filteredArray
+    })
 
     scroller.scrollTo('Results', {
       duration: 1200,
       smooth: true,
     });
-}
+  }
 
   render() {
     return (
       <div className="App">
-        <Header getArtistProp={this.getArtist}/>
+        <Header getArtistProp={this.getArtist} />
         < Results fourConcerts={this.state.finalArray} />
-        < Footer/>
+        < Footer />
       </div>
     );
   }

@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import ScrollUpButton from "react-scroll-up-button";
 import './Results.css';
 
+
+
+
+
 class Results extends Component {
     constructor() {
         super();
