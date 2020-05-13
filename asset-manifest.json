@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Keil-Martin-Project-5/static/css/main.5b6d3fa0.chunk.css",
+    "main.js": "/Keil-Martin-Project-5/static/js/main.bdecd284.chunk.js",
+    "main.js.map": "/Keil-Martin-Project-5/static/js/main.bdecd284.chunk.js.map",
+    "runtime-main.js": "/Keil-Martin-Project-5/static/js/runtime-main.5e146ff6.js",
+    "runtime-main.js.map": "/Keil-Martin-Project-5/static/js/runtime-main.5e146ff6.js.map",
+    "static/js/2.cff5a3c6.chunk.js": "/Keil-Martin-Project-5/static/js/2.cff5a3c6.chunk.js",
+    "static/js/2.cff5a3c6.chunk.js.map": "/Keil-Martin-Project-5/static/js/2.cff5a3c6.chunk.js.map",
+    "index.html": "/Keil-Martin-Project-5/index.html",
+    "precache-manifest.eda98d9838d6b3d3c5ff3e0a3fd4fed7.js": "/Keil-Martin-Project-5/precache-manifest.eda98d9838d6b3d3c5ff3e0a3fd4fed7.js",
+    "service-worker.js": "/Keil-Martin-Project-5/service-worker.js",
+    "static/css/main.5b6d3fa0.chunk.css.map": "/Keil-Martin-Project-5/static/css/main.5b6d3fa0.chunk.css.map",
+    "static/js/2.cff5a3c6.chunk.js.LICENSE.txt": "/Keil-Martin-Project-5/static/js/2.cff5a3c6.chunk.js.LICENSE.txt",
+    "static/media/Header.css": "/Keil-Martin-Project-5/static/media/rapper.f57aa581.jpg",
+    "static/media/Results.css": "/Keil-Martin-Project-5/static/media/stageHeader.fec9fb68.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e146ff6.js",
+    "static/js/2.cff5a3c6.chunk.js",
+    "static/css/main.5b6d3fa0.chunk.css",
+    "static/js/main.bdecd284.chunk.js"
+  ]
+}
