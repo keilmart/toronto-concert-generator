@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
-import axios from 'axios';
-import Header from './Header.js'
-import Results from './Results.js'
-import Footer from './Footer'
-import { scroller } from 'react-scroll'
+import React, { Component } from "react";
+import "./App.css";
+import axios from "axios";
+import Header from "./Header.js";
+import Results from "./Results.js";
+import Footer from "./Footer";
+import { scroller } from "react-scroll";
 
 // - Order of Operations - //
-// Access the TicketMaster API, and get all the events// 
-// Get back the data and parse for what I want // 
+// Access the TicketMaster API, and get all the events//
+// Get back the data and parse for what I want //
 // Save the data to "state" //
 // Get user selection of which genre of music they are interested in / /
 // Filter the concerts for just those in the selected genre //
-// Filter that group of concerts and return one random selection // 
+// Filter that group of concerts and return one random selection //
 // Print the coneerts name, venue, localDate, localTime //
 
 class App extends Component {
@@ -23,10 +23,10 @@ class App extends Component {
       allMusicVenues: [],
       filteredArray: [],
       finalArray: [],
-    }
+    };
   }
 
-  // hooking into compoenet, we do our api call here becuase this is the last our the life cycle, (first the constructor, then the render lastly this - aka the lifecycle). we call it here becuadse we dont want to load the api if there is no page to render to. But we dont always do our API call here, this is just an instance)
+  // hooking into component, we do our api call here because this is the last of the life cycle, (first the constructor, then the render lastly this - aka the lifecycle). we call it here because we don't want to load the api if there is no page to render to. But we don't always do our API call here, this is just an instance)
   componentDidMount() {
     axios({
       url: `https://app.ticketmaster.com/discovery/v2/events.json`,
@@ -38,16 +38,14 @@ class App extends Component {
         city: `toronto`,
         classificationName: `music`,
         sort: `date,asc`,
-        size: `200`
-      }
+        size: `200`,
+      },
     })
-
-      // Get back the data and parse for what I want, I pass a callback function becauase thats a set of steps that we tell what to do // .data goes into the array // 
+      // Get back the data and parse for what I want, I pass a callback function because thats a set of steps that we tell what to do // .data goes into the array //
       .then((responsePlaceholder) => {
-
-        // this is savign the data into set state.App // this refers to the compoent that we are inside of // everytime setState runs, it re renders the page // We are grabing the allMusicVenues from above, which is set to an empty array //
+        // this is saving the data into set state.App // this refers to the component that we are inside of // every time setState runs, it re renders the page // We are grabbing the allMusicVenues from above, which is set to an empty array //
         this.setState({
-          allMusicVenues: responsePlaceholder.data._embedded.events
+          allMusicVenues: responsePlaceholder.data._embedded.events,
         });
       });
   }
@@ -57,9 +55,9 @@ class App extends Component {
 
     const originalArray = [...this.state.allMusicVenues];
 
-    let subArray = originalArray.filter(event => {
+    let subArray = originalArray.filter((event) => {
       return event.classifications[0].genre.id === choiceOfGenre;
-    })
+    });
 
     const filteredArray = [];
     for (let i = 0; i < 6; i++) {
@@ -67,21 +65,21 @@ class App extends Component {
     }
 
     this.setState({
-      finalArray: filteredArray
-    })
+      finalArray: filteredArray,
+    });
 
-    scroller.scrollTo('Results', {
+    scroller.scrollTo("Results", {
       duration: 1200,
       smooth: true,
     });
-  }
+  };
 
   render() {
     return (
       <div className="App">
         <Header getArtistProp={this.getArtist} />
-        < Results fourConcerts={this.state.finalArray} />
-        < Footer />
+        <Results fourConcerts={this.state.finalArray} />
+        <Footer />
       </div>
     );
   }
