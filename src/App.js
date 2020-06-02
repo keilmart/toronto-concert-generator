@@ -68,6 +68,8 @@ class App extends Component {
       finalArray: filteredArray,
     });
 
+    console.log(this.state.finalArray);
+
     scroller.scrollTo("Results", {
       duration: 1200,
       smooth: true,

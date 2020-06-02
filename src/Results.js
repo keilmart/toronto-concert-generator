@@ -3,6 +3,10 @@ import ScrollUpButton from "react-scroll-up-button";
 import "./Results.css";
 
 class Results extends Component {
+  constructor() {
+    super();
+  }
+
   render() {
     return (
       <div className="Results">
@@ -13,25 +17,10 @@ class Results extends Component {
                 <li className="imgBacker">
                   <h2>{chosenEvent.name}</h2>
                   <h3>{chosenEvent._embedded.venues[0].name}</h3>
-                  <h4>
-                    {chosenEvent.dates.start.localDate}
-                    <span role="img" aria-label="Calender">
-                      {" "}
-                      📅
-                    </span>
-                  </h4>
-                  <h4>
-                    {chosenEvent.dates.start.localTime}{" "}
-                    <span role="img" aria-label="Clock">
-                      {" "}
-                      🕓
-                    </span>
-                  </h4>
+                  <h4>{chosenEvent.dates.start.localDate} 📅</h4>
+                  <h4>{chosenEvent.dates.start.localTime} 🕓</h4>
                   <div className="imgHold">
-                    <img
-                      src={chosenEvent.images[5].url}
-                      alt="Selected Concerts"
-                    />
+                    <img src={chosenEvent.images[5].url} />
                   </div>
                 </li>
               );
