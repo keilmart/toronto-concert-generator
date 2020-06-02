@@ -60,13 +60,14 @@ class App extends Component {
     });
 
     const filteredArray = [];
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 4; i++) {
       filteredArray.push(subArray[i]);
     }
 
     this.setState({
       finalArray: filteredArray,
     });
+    console.log(this.state.finalArray);
 
     scroller.scrollTo("Results", {
       duration: 1200,
