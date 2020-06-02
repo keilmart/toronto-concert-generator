@@ -67,7 +67,6 @@ class App extends Component {
     this.setState({
       finalArray: filteredArray,
     });
-    console.log(this.state.finalArray);
 
     scroller.scrollTo("Results", {
       duration: 1200,
