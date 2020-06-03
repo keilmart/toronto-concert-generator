@@ -75,6 +75,9 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.filteredArray);
+    console.log(this.state.finalArray);
+    console.log(this.state.allMusicVenues);
     return (
       <div className="App">
         <Header getArtistProp={this.getArtist} />
