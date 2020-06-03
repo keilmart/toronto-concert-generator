@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/toronto-concert-generator/static/css/main.f809d666.chunk.css",
+    "main.css": "/toronto-concert-generator/static/css/main.c8e5e876.chunk.css",
     "main.js": "/toronto-concert-generator/static/js/main.70a6d07d.chunk.js",
     "main.js.map": "/toronto-concert-generator/static/js/main.70a6d07d.chunk.js.map",
     "runtime-main.js": "/toronto-concert-generator/static/js/runtime-main.c64644e6.js",
@@ -8,17 +8,17 @@
     "static/js/2.cff5a3c6.chunk.js": "/toronto-concert-generator/static/js/2.cff5a3c6.chunk.js",
     "static/js/2.cff5a3c6.chunk.js.map": "/toronto-concert-generator/static/js/2.cff5a3c6.chunk.js.map",
     "index.html": "/toronto-concert-generator/index.html",
-    "precache-manifest.e9e3cd9f3ee7f47dcfcccb6db71f2906.js": "/toronto-concert-generator/precache-manifest.e9e3cd9f3ee7f47dcfcccb6db71f2906.js",
+    "precache-manifest.a5af94ec38553021e4aaf15312f686ef.js": "/toronto-concert-generator/precache-manifest.a5af94ec38553021e4aaf15312f686ef.js",
     "service-worker.js": "/toronto-concert-generator/service-worker.js",
-    "static/css/main.f809d666.chunk.css.map": "/toronto-concert-generator/static/css/main.f809d666.chunk.css.map",
+    "static/css/main.c8e5e876.chunk.css.map": "/toronto-concert-generator/static/css/main.c8e5e876.chunk.css.map",
     "static/js/2.cff5a3c6.chunk.js.LICENSE.txt": "/toronto-concert-generator/static/js/2.cff5a3c6.chunk.js.LICENSE.txt",
     "static/media/Header.css": "/toronto-concert-generator/static/media/rapper.f57aa581.jpg",
-    "static/media/Results.css": "/toronto-concert-generator/static/media/stageHeader.fec9fb68.jpg"
+    "static/media/Results.css": "/toronto-concert-generator/static/media/stageHeaderTwo.9a19ffcf.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c64644e6.js",
     "static/js/2.cff5a3c6.chunk.js",
-    "static/css/main.f809d666.chunk.css",
+    "static/css/main.c8e5e876.chunk.css",
     "static/js/main.70a6d07d.chunk.js"
   ]
 }
