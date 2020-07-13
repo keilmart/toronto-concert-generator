@@ -59,10 +59,7 @@ class App extends Component {
       return event.classifications[0].genre.id === choiceOfGenre;
     });
 
-    const filteredArray = [];
-    for (let i = 0; i < 4; i++) {
-      filteredArray.push(subArray[i]);
-    }
+    let filteredArray = subArray.slice(0, 8)
 
     this.setState({
       finalArray: filteredArray,
