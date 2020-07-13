@@ -4,7 +4,9 @@ import axios from "axios";
 import Header from "./Header.js";
 import Results from "./Results.js";
 import Footer from "./Footer";
+import Loader from 'react-loader-spinner'
 import { scroller } from "react-scroll";
+
 
 // - Order of Operations - //
 // Access the TicketMaster API, and get all the events//
@@ -23,6 +25,7 @@ class App extends Component {
       allMusicVenues: [],
       filteredArray: [],
       finalArray: [],
+      loading: true,
     };
   }
 
@@ -46,6 +49,7 @@ class App extends Component {
         // this is saving the data into set state.App // this refers to the component that we are inside of // every time setState runs, it re renders the page // We are grabbing the allMusicVenues from above, which is set to an empty array //
         this.setState({
           allMusicVenues: responsePlaceholder.data._embedded.events,
+          loading: false,
         });
       });
   }
@@ -72,9 +76,16 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.filteredArray);
-    console.log(this.state.finalArray);
-    console.log(this.state.allMusicVenues);
+    if (this.state.loading) {
+      return <div class="loadScreen"><Loader
+        type="Puff"
+        color="#00BFFF"
+        height={100}
+        width={100}
+        timeout={4000} //3 secs
+
+      /></div>;
+    }
     return (
       <div className="App">
         <Header getArtistProp={this.getArtist} />

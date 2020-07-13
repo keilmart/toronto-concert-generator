@@ -28,8 +28,8 @@ class Header extends Component {
     return (
       <header>
         <div className="wrapper backer">
-          <h1>Torontos Upcoming Concert Generator</h1>
-          <h2>Populate A Random Artist And Venue</h2>
+          <h1>Toronto's Upcoming Concert Generator</h1>
+          <h2>Populate An Up To Date Concert List Based On Genre Selection </h2>
         </div>
         <form action="">
           <select
