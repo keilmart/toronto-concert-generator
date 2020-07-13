@@ -38,11 +38,14 @@ class Header extends Component {
             id="whichVenue"
           >
             <option value="">Music Genres...</option>
-            <option value="KnvZfZ7vAee">R&B</option>
-            <option value="KnvZfZ7vAv1">Hip-Hop</option>
-            <option value="KnvZfZ7vAeA">Rock</option>
-            <option value="KnvZfZ7vAev">Pop</option>
+            <option value="KnvZfZ7vAvv">Alternative</option>
+            <option value="KnvZfZ7vAv6">Country</option>
             <option value="KnvZfZ7vAvF">Dance/Electronic</option>
+            <option value="KnvZfZ7vAva">Folk</option>
+            <option value="KnvZfZ7vAv1">Hip-Hop</option>
+            <option value="KnvZfZ7vAev">Pop</option>
+            <option value="KnvZfZ7vAee">R&B</option>
+            <option value="KnvZfZ7vAeA">Rock</option>
           </select>
           <button
             onClick={(e) => this.props.getArtistProp(e, this.state.userChoice)}
