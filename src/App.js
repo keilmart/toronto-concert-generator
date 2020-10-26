@@ -82,7 +82,7 @@ class App extends Component {
         color="#00BFFF"
         height={100}
         width={100}
-        timeout={4000} //3 secs
+        timeout={6000} //5 secs
 
       /></div>;
     }

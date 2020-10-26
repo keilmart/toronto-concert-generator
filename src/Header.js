@@ -48,7 +48,9 @@ class Header extends Component {
             <option value="KnvZfZ7vAeA">Rock</option>
           </select>
           <button
-            onClick={(e) => this.props.getArtistProp(e, this.state.userChoice)}
+            onClick={(e) => window.alert('No Concerts Booked Due to Covid! - Please check back at a later date.')
+            }
+          // onClick={(e) => this.props.getArtistProp(e, this.state.userChoice)}
           >
             Find My Artist
           </button>
