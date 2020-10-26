@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/toronto-concert-generator/precache-manifest.e2c46d4f9a9cc472a0910a944ee50a15.js"
+  "/toronto-concert-generator/precache-manifest.94efb3f521190edf30f7cfa4530b60a8.js"
 );
 
 self.addEventListener('message', (event) => {
